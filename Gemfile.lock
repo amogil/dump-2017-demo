@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    asciiart (0.0.9)
+      rainbow (= 2.0.0)
+      rmagick (= 2.13.4)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -14,6 +17,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     ice_nine (0.11.2)
     multipart-post (2.0.0)
+    rainbow (2.0.0)
+    rmagick (2.13.4)
     telegram-bot-ruby (0.7.2)
       faraday
       virtus
@@ -28,6 +33,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  asciiart
   telegram-bot-ruby
 
 BUNDLED WITH
