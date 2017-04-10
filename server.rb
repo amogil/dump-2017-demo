@@ -15,7 +15,7 @@ Telegram::Bot::Client.run(token) do |bot|
               file_path = file['result']['file_path']
               url = "https://api.telegram.org/file/bot#{token}/#{file_path}"
               art = AsciiArt.new(url)
-              art.to_ascii_art(:width => 50).split("\n").map { |l| "`#{l}`" }.join("\n")
+              "`#{art.to_ascii_art(:width => 50)}`"
             else
               "Привет, #{message.from.first_name}! Ты написал: #{message.text}"
             end
